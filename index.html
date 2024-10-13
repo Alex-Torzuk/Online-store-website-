@@ -9,8 +9,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a href="#!" class="logo">Panto</a>
+        <nav class="header__nav nav">
+          <a href="#!" class="nav-logo">Panto</a>
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="#!">Furniture</a>
@@ -30,6 +30,74 @@
             <div class="cart__count">0</div>
           </a>
         </nav>
+
+        <div class="header__content">
+          <h1 class="header__title">
+            Make your interior more minimalistic & modern
+          </h1>
+          <p>
+            Turn your room with panto into a lot more minimalist and modern with
+            ease and speed
+          </p>
+
+          <form action="" class="header__search search-form">
+            <input
+              placeholder="Search furniture"
+              type="text"
+              class="search-form__input"
+            />
+            <button class="search-form__btn">
+              <img src="./img/icons/search.svg" alt="Search" />
+            </button>
+          </form>
+        </div>
+        <div class="header__dot-sofa">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+          <div class="info-hint">
+            <label>
+              <input type="radio" name="sofa-color" class="info-hint__radio" />
+              <div
+                class="info-hint__radio-fake info-hint__radio-fake--orange"
+              ></div>
+            </label>
+            <label>
+              <input type="radio" name="sofa-color" class="info-hint__radio" />
+              <div
+                class="info-hint__radio-fake info-hint__radio-fake--biruza"
+              ></div>
+            </label>
+            <label>
+              <input type="radio" name="sofa-color" class="info-hint__radio" />
+              <div
+                class="info-hint__radio-fake info-hint__radio-fake--gray"
+              ></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="header__dot-vase">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+        </div>
+
+        <div class="header__dot-item">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+        </div>
+
+        <div class="header__dot-wall">
+          <button class="info-dot">
+            <div class="info-dot__circle"></div>
+            <div class="info-dot__radius"></div>
+          </button>
+        </div>
       </div>
     </header>
   </body>
