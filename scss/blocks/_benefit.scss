@@ -1,0 +1,26 @@
+.benefit {
+}
+.benefit-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.benefit-text {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.85;
+  opacity: 0.8;
+}
+.benefit-link {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 500;
+  line-height: 1.85;
+
+  &::after {
+    content: url(./../img/icons/arrow-right.svg);
+    height: 24px;
+  }
+}
