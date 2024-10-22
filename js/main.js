@@ -67,3 +67,45 @@ const swiper = new Swiper('.swiper', {
     
     
   });
+
+  // Tabs
+
+  const tabsBtn = document.querySelectorAll('[data-tab]')
+  const tabsProducts = document.querySelectorAll('[data-tab-value]')
+  console.log(tabsProducts)
+
+  for(let btn of tabsBtn){
+    console.log(btn)
+
+    btn.addEventListener('click', function() {
+
+        //Убираем активные кнопки у всех кнопок
+
+        for(let btn of tabsBtn){
+            btn.classList.remove('tab-controls__btn--active')
+        }
+
+        //Добавляем активный клфсс к текущей кнопке
+
+        this.classList.add('tab-controls__btn--active')
+
+        //Получаем категории товаров которые нужно оставить
+
+        console.log(this.dataset.tab)
+
+        //Отобразить нужные товары and Скрыть все товары
+        for(let product of tabsProducts){
+
+            if(product.dataset.tabValue === this.dataset.tab){
+                product.classList.remove('none')
+            } else{
+                product.classList.add('none')
+            }
+
+            
+        }
+
+
+
+    })
+  }
