@@ -96,15 +96,24 @@ const swiper = new Swiper('.swiper', {
         //Отобразить нужные товары and Скрыть все товары
         for(let product of tabsProducts){
 
-            if(product.dataset.tabValue === this.dataset.tab){
+            // Проверка на отображение всех товаров
+
+            if(this.dataset.tab === 'all'){
                 product.classList.remove('none')
-            } else{
-                product.classList.add('none')
+            }else{
+                if(product.dataset.tabValue === this.dataset.tab){
+                    product.classList.remove('none')
+                } else{
+                    product.classList.add('none')
+                }
             }
 
             
-        }
 
+            
+        }
+        //update swaer
+        swiper.update()
 
 
     })

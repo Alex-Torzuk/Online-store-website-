@@ -244,6 +244,16 @@ body {
   font-size: 18px;
 }
 
+.nav-list__link--dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-list__link--dropdown::after {
+  content: url("./../img/icons/arrow-down.svg");
+  height: 18px;
+}
+
 .cart {
   position: relative;
   align-self: center;
