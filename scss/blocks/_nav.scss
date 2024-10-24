@@ -6,3 +6,10 @@
 .nav-logo {
   align-self: center;
 }
+
+.nav__btn {
+  display: none;
+  @include tablet() {
+    display: block;
+  }
+}

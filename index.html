@@ -22,6 +22,22 @@
               <a class="nav-list__link nav-list__link--dropdown" href="#!"
                 >Furniture</a
               >
+              <div class="nav-list__sub-nav">
+                <ul class="sub-nav">
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="#!">Home</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="#!">Services</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="#!">Products</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="#!">Contacts</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="#!">Shop</a>
@@ -37,6 +53,13 @@
             <img class="cart__img" src="./img/icons/Cart.svg" alt="" />
             <div class="cart__count">0</div>
           </a>
+          <button>
+            <img
+              class="nav__btn"
+              src="./img/icons/mobile-nav.svg"
+              alt="Open navigation"
+            />
+          </button>
         </nav>
 
         <div class="header__content">
@@ -167,8 +190,55 @@
           </div>
         </div>
       </div>
+
+      <div class="mobile-nav-wrapper">
+        <div class="mobile-nav-header">
+          <a href="#cart" class="mobile-cart">
+            <div class="cart">
+              <img class="cart__img" src="./img/icons/Cart.svg" alt="" />
+              <div class="cart__count">0</div>
+            </div>
+            Cart
+          </a>
+          <button class="mobile-nav-btn-close">
+            <img src="./img/icons/close.svg" alt="Close navigation" />
+          </button>
+        </div>
+
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
+              >Furniture</a
+            >
+
+            <ul class="mobile-sub-nav">
+              <li class="mobile-sub-nav__item">
+                <a class="mobile-sub-nav__link" href="#!">Home</a>
+              </li>
+              <li class="mobile-sub-nav__item">
+                <a class="mobile-sub-nav__link" href="#!">Services</a>
+              </li>
+              <li class="mobile-sub-nav__item">
+                <a class="mobile-sub-nav__link" href="#!">Products</a>
+              </li>
+              <li class="mobile-sub-nav__item">
+                <a class="mobile-sub-nav__link" href="#!">Contacts</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#!">Shop</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#!">About Us</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#!">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <section class="benefits">
+    <section class="benefits none">
       <div class="container">
         <div class="benefits__grid">
           <h2 class="benefits__title">Why Choosing Us</h2>
@@ -201,7 +271,7 @@
         </div>
       </div>
     </section>
-    <section class="products">
+    <section class="products none">
       <div class="container">
         <h2 class="products__title">Best Selling Product</h2>
         <div class="products__tabs">
@@ -665,7 +735,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container container--small">
         <div class="footer__grid">
           <div class="footer__desc">
