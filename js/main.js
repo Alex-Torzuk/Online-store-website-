@@ -118,3 +118,6 @@ const swiper = new Swiper('.swiper', {
 
     })
   }
+
+  const mobileNavOpen = document.querySelector('#open-mobile-nav')
+  console.log(mobileNavOpen)
