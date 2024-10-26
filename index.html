@@ -53,7 +53,7 @@
             <img class="cart__img" src="./img/icons/Cart.svg" alt="" />
             <div class="cart__count">0</div>
           </a>
-          <button id="open-mobile-nav" class="nav__btn">
+          <button id="open-mobile-nav-btn" class="nav__btn">
             <img src="./img/icons/mobile-nav.svg" alt="Open navigation" />
           </button>
         </nav>
@@ -185,53 +185,6 @@
             </label>
           </div>
         </div>
-      </div>
-
-      <div class="mobile-nav-wrapper">
-        <div class="mobile-nav-header">
-          <a href="#cart" class="mobile-cart">
-            <div class="cart">
-              <img class="cart__img" src="./img/icons/Cart.svg" alt="" />
-              <div class="cart__count">0</div>
-            </div>
-            Cart
-          </a>
-          <button class="mobile-nav-btn-close">
-            <img src="./img/icons/close.svg" alt="Close navigation" />
-          </button>
-        </div>
-
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
-              >Furniture</a
-            >
-
-            <ul class="mobile-sub-nav">
-              <li class="mobile-sub-nav__item">
-                <a class="mobile-sub-nav__link" href="#!">Home</a>
-              </li>
-              <li class="mobile-sub-nav__item">
-                <a class="mobile-sub-nav__link" href="#!">Services</a>
-              </li>
-              <li class="mobile-sub-nav__item">
-                <a class="mobile-sub-nav__link" href="#!">Products</a>
-              </li>
-              <li class="mobile-sub-nav__item">
-                <a class="mobile-sub-nav__link" href="#!">Contacts</a>
-              </li>
-            </ul>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#!">Shop</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#!">About Us</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#!">Contact</a>
-          </li>
-        </ul>
       </div>
     </header>
     <section class="benefits none">
@@ -772,6 +725,53 @@
         </div>
       </div>
     </footer>
+
+    <div id="mobile-nav" class="mobile-nav-wrapper">
+      <div class="mobile-nav-header">
+        <a href="#cart" class="mobile-cart">
+          <div class="cart">
+            <img class="cart__img" src="./img/icons/Cart.svg" alt="" />
+            <div class="cart__count">0</div>
+          </div>
+          Cart
+        </a>
+        <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+          <img src="./img/icons/close.svg" alt="Close navigation" />
+        </button>
+      </div>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
+            >Furniture</a
+          >
+
+          <ul class="mobile-sub-nav">
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Home</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Services</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Products</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#!">Shop</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#!">About Us</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#!">Contact</a>
+        </li>
+      </ul>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/main.js"></script>

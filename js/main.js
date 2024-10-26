@@ -10,6 +10,9 @@ for(let btn of infoBtns){
 
 function showHint(e){
     e.stopPropagation()
+    for(let hint of infoHints){
+        hint.classList.add('none')
+    }
     this.parentNode.querySelector('.info-hint').classList.toggle('none')
 }
 
@@ -119,5 +122,14 @@ const swiper = new Swiper('.swiper', {
     })
   }
 
-  const mobileNavOpen = document.querySelector('#open-mobile-nav')
-  console.log(mobileNavOpen)
+  const mobileNavOpenBtn = document.querySelector('#open-mobile-nav-btn')
+  const mobileNavCloseBtn = document.querySelector('#close-mobile-nav-btn')
+  const mobileNav = document.querySelector('#mobile-nav')
+  mobileNavOpenBtn.onclick = function(){
+    mobileNav.classList.add('mobile-nav-wrapper--open')
+  }
+
+  mobileNavCloseBtn.onclick = function(){
+    mobileNav.classList.remove('mobile-nav-wrapper--open')
+  }
+  

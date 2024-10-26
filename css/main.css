@@ -132,10 +132,6 @@ body {
   color: var(--text-color);
 }
 
-body {
-  padding-bottom: 50vh;
-}
-
 .container {
   max-width: 1310px;
   padding: 0 15px;
@@ -150,6 +146,7 @@ body {
 }
 
 .header {
+  position: relative;
   padding-top: 40px;
   background-color: var(--footer-bg);
   background-image: url("./../img/header/header-bg.jpg");
@@ -765,6 +762,7 @@ a.logo {
 .mobile-nav-wrapper {
   display: none;
   position: absolute;
+  z-index: 9;
   right: 0;
   top: 0;
   bottom: 0;
@@ -772,6 +770,13 @@ a.logo {
   background-color: var(--footer-bg);
   padding: 30px 30px;
   color: var(--footer-text-color);
+}
+.mobile-nav-wrapper a {
+  color: var(--footer-text-color);
+}
+.mobile-nav-wrapper a:hover {
+  color: #fff;
+  transition: color 0.2s ease-in;
 }
 .mobile-nav-wrapper--open {
   display: block;

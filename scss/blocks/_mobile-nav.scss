@@ -1,6 +1,7 @@
 .mobile-nav-wrapper {
   display: none;
   position: absolute;
+  z-index: 9;
   right: 0;
   top: 0;
   bottom: 0;
@@ -8,6 +9,14 @@
   background-color: var(--footer-bg);
   padding: 30px 30px;
   color: var(--footer-text-color);
+
+  a {
+    color: var(--footer-text-color);
+    &:hover {
+      color: #fff;
+      transition: color 0.2s ease-in;
+    }
+  }
   //   @include tablet() {
   //     display: block;
   //   }
