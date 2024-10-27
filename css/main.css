@@ -145,6 +145,11 @@ body {
   display: none !important;
 }
 
+.title-2 {
+  font-weight: 700;
+  font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+}
+
 .header {
   position: relative;
   padding-top: 40px;
@@ -162,9 +167,17 @@ body {
 .header a {
   color: var(--header-text-color);
 }
+@media (max-width: 629px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
+}
 
 .header__nav {
-  margin-bottom: 86px;
+  margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
 }
 
 .header__content {
@@ -174,7 +187,8 @@ body {
 .header__title {
   margin-bottom: 14px;
   font-weight: 700;
-  font-size: 80px;
+  font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
+  text-wrap: balance;
   line-height: 130%;
   letter-spacing: -0.8px;
   text-transform: capitalize;
@@ -184,37 +198,49 @@ body {
   margin: 0 auto;
   opacity: 0.8;
   max-width: 550px;
-  font-size: 24px;
+  font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
+  text-wrap: balance;
   line-height: 160%;
 }
 
 .header__search {
   margin: 45px auto 0;
+  display: inline-block;
+}
+@media (max-width: 819px) {
+  .header__search {
+    display: none;
+  }
 }
 
-.header__dot-sofa {
+.header__dot {
   position: absolute;
+}
+@media (max-width: 819px) {
+  .header__dot {
+    display: none;
+  }
+}
+
+.header__dot--sofa {
   left: 20.5555555556%;
   top: 63.1918819188%;
   transform: translate(0%, 0%);
 }
 
-.header__dot-vase {
-  position: absolute;
+.header__dot--vase {
   left: 7.9166666667%;
   top: 69.4930875576%;
   transform: translate(-50%, -50%);
 }
 
-.header__dot-item {
-  position: absolute;
+.header__dot--item {
   left: 56.25%;
   top: 72.6014760148%;
   transform: translate(-50%, -50%);
 }
 
-.header__dot-wall {
-  position: absolute;
+.header__dot--wall {
   right: 3.1944444444%;
   top: 75.7380073801%;
 }
@@ -447,7 +473,7 @@ body {
 }
 
 .benefits {
-  padding: 120px 0;
+  padding: clamp(120px, 2.679rem + 5.36vw, 60px) 0;
 }
 
 .benefits__grid {
@@ -455,10 +481,19 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+@media (max-width: 992px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(30px, 0.982rem + 4.46vw, 60px) 20px;
+  }
+}
+@media (max-width: 629px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .benefits__title {
-  font-weight: 700;
-  font-size: 42px;
   max-width: 260px;
 }
 
@@ -483,8 +518,6 @@ body {
 .products__title {
   margin-bottom: 32px;
   text-align: center;
-  font-weight: 700;
-  font-size: 42px;
 }
 
 .products__tabs {
@@ -493,7 +526,17 @@ body {
 }
 
 .products__slider {
-  margin-bottom: 60px;
+  margin-bottom: clamp(30px, 0.982rem + 4.46vw, 60px);
+}
+@media (max-width: 1400px) {
+  .products__slider {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 629px) {
+  .products__slider {
+    padding: 0 20px;
+  }
 }
 
 .products__link {
@@ -669,7 +712,7 @@ body {
 }
 
 .footer {
-  padding: 118px 0 56px;
+  padding: clamp(60px, 2.024rem + 8.63vw, 118px) 0 56px;
   background-color: var(--footer-bg);
   color: var(--footer-text-color);
   font-weight: 500;
@@ -685,14 +728,29 @@ body {
 }
 
 .footer__grid {
-  margin-bottom: 118px;
+  margin-bottom: clamp(60px, 2.024rem + 8.63vw, 118px);
   display: grid;
   grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
-  gap: 20px;
+  gap: 60px 20px;
+}
+@media (max-width: 992px) {
+  .footer__grid {
+    grid-template-columns: 4fr 1fr 3fr 3fr;
+  }
+}
+@media (max-width: 629px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .footer__desc p + p {
   margin-top: 1em;
+}
+@media (max-width: 629px) {
+  .footer__desc {
+    grid-column: 1/3;
+  }
 }
 
 .footer__logo {
@@ -704,9 +762,21 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 629px) {
+  .footer__row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
 
 .footer__nav--services {
   grid-column-start: 3;
+}
+@media (max-width: 629px) {
+  .footer__nav--services {
+    grid-column-start: auto;
+  }
 }
 
 .footer__nav-title {
@@ -730,13 +800,19 @@ body {
 
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
+}
+@media (max-width: 629px) {
+  .footer__links {
+    gap: 20px;
+  }
 }
 
 .logo,
 a.logo {
   font-weight: 700;
-  font-size: 28px;
+  font-size: clamp(18px, 0.946rem + 0.89vw, 28px);
   letter-spacing: 0.28px;
   text-transform: capitalize;
   color: #fff;
